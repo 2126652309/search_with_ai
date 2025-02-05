@@ -38,7 +38,7 @@ export async function webSearch(query: string): Promise<IWebSearchResult[]> {
   ];
 
   try {
-    const baseUrl = `${BASE_URL}/chat/completions`;
+    const baseUrl = `${BASE_URL}`;
     const res = await fetch(baseUrl, {
       method: 'POST',
       headers: {
